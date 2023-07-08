@@ -1,0 +1,102 @@
+.header {
+}
+.nav {
+  &__brand {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__link {
+  }
+  &__cta {
+  }
+  &__toggler {
+    &__image {
+    }
+  }
+}
+.hero {
+  &__container {
+  }
+  &__heading {
+  }
+  &__description {
+  }
+  &__cta {
+  }
+}
+.main {
+}
+.features {
+  &__heading {
+  }
+  &__description {
+  }
+  &container {
+  }
+  &__card {
+    &__image {
+    }
+    &__title {
+    }
+    &__description {
+    }
+  }
+}
+.articles {
+  &__heading {
+  }
+  &__container {
+  }
+  &__card {
+    &__image {
+    }
+    &__author {
+    }
+    &__title {
+    }
+    &__description {
+    }
+  }
+}
+.footer {
+  &__col {
+    &--1 {
+    }
+    &--2 {
+    }
+    &--3 {
+    }
+  }
+  // 1
+  &__brand {
+  }
+  &__sm {
+    &__item {
+    }
+    &__link {
+    }
+    &__img {
+    }
+  }
+  // end 1
+  // 2
+  &__sitemap {
+    &--1 {
+    }
+    &--2 {
+    }
+    &__item {
+    }
+    &__link {
+    }
+  }
+  // end 2
+  // 3
+  &__cta {
+  }
+  &__copyright {
+  }
+  // end 3
+}
