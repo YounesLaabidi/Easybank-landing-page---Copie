@@ -110,13 +110,18 @@ body {
   }
 }
 .hero {
-  position: relative;
   @media (min-width: 1024px) {
-    display: flex;
-    max-width: 1110px;
-    height: 474px;
-    margin: 0 auto;
+    position: relative;
     overflow-y: hidden;
+  }
+  &__wrapper {
+    @media (min-width: 1024px) {
+      display: flex;
+      height: 474px;
+      overflow-y: hidden;
+    }
+    max-width: 1110px;
+    margin: 0 auto;
   }
   &__background {
     background: url(./images/hero-background-color.svg) no-repeat center;
@@ -130,6 +135,12 @@ body {
       max-width: 100%;
       display: block;
       margin: 0 auto;
+      @media (min-width: 1024px) {
+        max-width: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
     }
   }
   &__container {
