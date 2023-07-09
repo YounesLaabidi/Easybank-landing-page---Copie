@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch index.scss index.min.css --style compressed"
+    "sass": "sass --watch index.scss index.min.css --style compressed",
+    "server": "http-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^14.1.1",
     "sass": "^1.63.6"
   }
 }
