@@ -35,10 +35,16 @@
       </nav>
       <section class="hero">
         <div class="hero__background">
-          <img
-            class="hero__background__image"
-            src="images/image-mockups-mobile.png"
-          />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./images/hero-background-color-desktop.png"
+            />
+            <img
+              class="hero__background__image"
+              src="./images/image-mockups-mobile.png"
+            />
+          </picture>
         </div>
         <div class="hero__container">
           <h1 class="hero__heading">Next generation digital banking!!!!</h1>

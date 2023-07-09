@@ -22,6 +22,9 @@ body {
   padding: 20px 32px 20px 24px;
   max-width: 1110px;
   margin: 0 auto;
+  @media (min-width: 768px) {
+    padding: 31px 32px 31px 24px;
+  }
   &__brand {
   }
   &__list {
@@ -29,7 +32,6 @@ body {
     position: absolute;
     width: 320px;
     height: 290px;
-    flex-shrink: 0;
     border-radius: 10px;
     background: #fafafa;
     flex-direction: column;
@@ -46,12 +48,21 @@ body {
     transition: opacity 0.7s linear;
     @media (min-width: 768px) {
       opacity: 1;
-      position: relative;
+      display: flex;
+      position: static;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 0;
+      background: transparent;
+      flex-direction: row;
+      row-gap: 0;
+      padding: 0;
       transform: none;
       box-shadow: none;
-      padding: 0;
-      flex-direction: row;
-      background: transparent;
+      pointer-events: none;
+      transition: none;
+      column-gap: 31.41px;
+      pointer-events: visible;
     }
     &.active {
       opacity: 1;
@@ -64,6 +75,12 @@ body {
     color: #9698a6;
     font-size: 24px;
     font-weight: 500;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+    }
     &:visited {
       color: inherit;
     }
@@ -94,9 +111,21 @@ body {
 }
 .hero {
   position: relative;
+  @media (min-width: 1024px) {
+    display: flex;
+    max-width: 1110px;
+    height: 474px;
+    margin: 0 auto;
+    overflow-y: hidden;
+  }
   &__background {
     background: url(./images/hero-background-color.svg) no-repeat center;
     background-size: cover;
+    @media (min-width: 1024px) {
+      order: 2;
+      background: none;
+    }
+
     &__image {
       max-width: 100%;
       display: block;
@@ -105,10 +134,17 @@ body {
   }
   &__container {
     padding: 69px 32px 50.34px;
+    text-align: center;
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1024px) {
+      text-align: left;
+      max-width: 424.8px;
+      padding-top: 103px;
+    }
   }
   &__heading {
     color: #2d314d;
-    text-align: center;
     font-size: 36.96px;
     font-weight: 300;
     line-height: 42.504px;
@@ -117,7 +153,6 @@ body {
   &__description {
     margin: 0 auto 64px;
     color: #9698a6;
-    text-align: center;
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
@@ -132,6 +167,10 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 18.2px;
+    @media (min-width: 1024px) {
+      margin: 0;
+      max-width: 424.8px;
+    }
     &:focus {
       border: none;
       outline: none;
@@ -160,8 +199,8 @@ body {
     margin-bottom: 29.23px;
   }
   &__description {
+    max-width: 600px;
     color: #9698a6;
-    text-align: center;
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
